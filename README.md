@@ -13,7 +13,8 @@ Retrofit is a very useful library to be used as Rest Client.
 Android  Studio
 
 ##  To build
-./gradlew build
+1) set ANDROID_HOME
+2) ./gradlew build
 
 
 ## Dificulties as Android Newbie (but senior 15+ years of Java Web Dev).
@@ -22,6 +23,7 @@ Android  Studio
 - Another design issue: The correct moment of  download image's posters. (I chose to store the image in movie dto as the movies are being loaded, but maybe I should load only for current movies being displayed). 
 - I discovered that I must control states by myself when I change my mobile orientation. (save state and retrieve state).
 - Unit tests - Missing, not enough time.
+- Very ugly: I need to get some tips on Android Layout. 
 
 ## Limitations
 - Retrofit isn't keeping the order of json returned by TMdb even if I use a ordered list as returned type, It's not clear if I should sort the result  by date or another field.
